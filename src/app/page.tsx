@@ -21,7 +21,7 @@ export default function Home() {
   const [modal, setModal] = useState(false)
   return (
     <div style={{ minHeight: "100vh", backgroundColor: "#f7f4f0" }}>
-      {/* <FormContainer>
+      <FormContainer>
       <FormSelect/>
       <PrimaryButton/>
       <SecondaryButton/>
@@ -37,8 +37,7 @@ export default function Home() {
       {modal&&(<Modal>Hello World</Modal>)}
       </FormContainer>
       <TableComponent/>
-      <SearchField/> */}
-      Hello world
+      <SearchField/>
     </div>
   );
 }
