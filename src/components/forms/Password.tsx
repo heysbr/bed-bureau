@@ -1,6 +1,7 @@
 "use client";
 
 import { Form } from "react-bootstrap";
+import ForgetPassword from "./ForgetPassword";
 
 type EmailFieldProps = {
   label?: string;
@@ -8,9 +9,9 @@ type EmailFieldProps = {
   required?: boolean;
 };
 
-export default function EmailField({
-  label = "Email address",
-  placeholder = "Enter your email",
+export default function Password({
+  label = "Password",
+  placeholder = "Enter Password",
   required = false,
 }: EmailFieldProps) {
   return (
@@ -23,6 +24,7 @@ export default function EmailField({
         style={{borderColor:"#C8C6CE", borderWidth:"1px",color:"#2A2338", fontSizeAdjust: "14px", }}
         className="input-placeholder"
       />
+      <ForgetPassword />
     </Form.Group>
   );
 }

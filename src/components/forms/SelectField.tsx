@@ -1,6 +1,6 @@
 import { Form } from "react-bootstrap";
 
-export default function FormSelectField() {
+export default function SelectField() {
   return (
     <Form.Select aria-label="Default select example">
       <option>Open this select menu</option>

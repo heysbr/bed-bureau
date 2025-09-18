@@ -1,13 +1,26 @@
-export default function TextField() {
+"use client";
+
+import { Form } from "react-bootstrap";
+
+type TextFieldProps = {
+  label?: string;
+  placeholder?: string;
+  required?: boolean;
+};
+
+export default function TextField({
+  label = "Enter Text",
+  placeholder = "Type something...",
+  required = false,
+}: TextFieldProps) {
   return (
-    <div className="mb-3">
-      <label htmlFor="" className="form-label">
-        TextField
-      </label>
-      <input
-        type="text"
-        className="form-control"
+    <Form.Group className="mb-3" controlId="formText">
+      <Form.Label>{label}</Form.Label>
+      <Form.Control 
+        type="text" 
+        placeholder={placeholder} 
+        required={required}
       />
-    </div>
+    </Form.Group>
   );
 }

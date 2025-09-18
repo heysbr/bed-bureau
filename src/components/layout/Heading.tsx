@@ -5,6 +5,6 @@ type HeadingProps = {
 };
 export default function Heading({children}:HeadingProps) {
   return (
-    <div className="w-100 bg-light p-5 display-3">{children}</div>
+    <h3 className="w-100 fw-bold fs-1">{children}</h3>
   )
 }

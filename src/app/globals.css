@@ -1,3 +1,44 @@
 .app-bg {
   background-color: #fbf8f5;
 }
+
+.app-primary {
+  background-color: #855dd9;
+}
+.app-text-primary {
+color: #855dd9;
+}
+
+body {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #855dd9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  transition: all 0.2s ease-in-out;
+  opacity: 0.7;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.input-placeholder::placeholder {
+  color: #C8C6CE;
+  font-size: "14px";
+}
+
+.btn-primary-shadow {
+  box-shadow: 0 4px 12px #855dd9 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary-shadow:hover {
+  box-shadow: 0 6px 16px #855dd9 !important;
+  transform: translateY(-2px);
+}
+
+.fs-40{
+  font-size: 40px !important;
+}
