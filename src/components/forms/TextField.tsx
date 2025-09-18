@@ -16,11 +16,7 @@ export default function TextField({
   return (
     <Form.Group className="mb-3" controlId="formText">
       <Form.Label>{label}</Form.Label>
-      <Form.Control 
-        type="text" 
-        placeholder={placeholder} 
-        required={required}
-      />
+      <Form.Control type="text" placeholder={placeholder} required={required} />
     </Form.Group>
   );
 }
