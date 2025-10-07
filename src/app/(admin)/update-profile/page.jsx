@@ -16,7 +16,7 @@ export default function Page() {
         register,
         handleSubmit,
         formState: { errors },
-      } = useForm<FormData>({
+      } = useForm({
         resolver: zodResolver(schema),
         mode: "all",
       });

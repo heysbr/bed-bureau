@@ -33,7 +33,7 @@ export default function Page() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormValues>({
+  } = useForm({
     resolver: zodResolver(passwordSchema),
     mode: "all",
   });

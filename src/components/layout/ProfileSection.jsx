@@ -1,9 +1,9 @@
 import Image from "next/image";
 import ProfileLogo from "@/assets/icons/profile_photo.svg";
-import { useAppSelector } from "@/store/hooks";
+import { useSelector } from "react-redux";
 
 export default function ProfileSection() {
-  const { adminDetail, isLoader, error } = useAppSelector((state) => state.admin);
+  const { adminDetail, isLoader, error } = useSelector((state) => state.admin);
 
 
   // const handleClick = ()=>{

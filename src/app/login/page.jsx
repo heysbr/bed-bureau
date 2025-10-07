@@ -30,16 +30,7 @@ export default function LoginPage() {
     (state) => state.admin
   );
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm <
-  FormData >
-  {
-    resolver: zodResolver(schema),
-    mode: "all",
-  };
+  const {register,handleSubmit,formState: { errors }} = useForm({resolver: zodResolver(schema),mode:"all"});
 
   const submit = async (data) => {
     try {
