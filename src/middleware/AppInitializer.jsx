@@ -1,16 +1,16 @@
-"use client"; 
+"use client"; // if using App Router
 
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { checkAdmin } from "@/store/reducerSlice/adminReducer";
 import { getProfile } from "@/store/actions/adminAction";
 
+
 export default function AppInitializer() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     const authDetail = localStorage.getItem("authorization");
-    console.log("Consoloe from getProfile",authDetail);
     if (authDetail) {
       try {
         const parsed = JSON.parse(authDetail);
@@ -26,5 +26,5 @@ export default function AppInitializer() {
     }
   }, [dispatch]);
 
-  return null;
+  return null; // nothing to render
 }

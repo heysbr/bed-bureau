@@ -20,10 +20,10 @@ export default function AdminLayout({ children }) {
   );
 
   // Redirect to login if not logged in
-  if (!isAdminLoggedIn) {
-    router.push("/login");
-    return null; // Prevent rendering
-  }
+  // if (!isAdminLoggedIn) {
+  //   router.push("/login");
+  //   return null; // Prevent rendering
+  // }
 
   return (
     <div className={`${montserrat.variable} h-screen bg-app-bg`}>
